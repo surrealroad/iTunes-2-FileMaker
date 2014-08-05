@@ -77,7 +77,7 @@ if (file_exists($filein)) {
 	    	array("label" => 'Bit Rate', "type" => 'NUMBER', "path" => './key[.="Bit Rate"]/following-sibling::integer[1]'),
 	    	array("label" => 'Sample Rate', "type" => 'NUMBER', "path" => './key[.="Sample Rate"]/following-sibling::integer[1]'),
 	    	array("label" => 'Comments', "type" => 'TEXT', "path" => './key[.="Comments"]/following-sibling::string[1]'),
-	    	array("label" => 'Play Counut', "type" => 'NUMBER', "path" => './key[.="Play Count"]/following-sibling::integer[1]'),
+	    	array("label" => 'Play Count', "type" => 'NUMBER', "path" => './key[.="Play Count"]/following-sibling::integer[1]'),
 	    	array("label" => 'Play Date', "type" => 'TIMESTAMP', "path" => './key[.="Play Date UTC"]/following-sibling::date[1]'),
 	    	array("label" => 'Release Date', "type" => 'TIMESTAMP', "path" => './key[.="Release Date"]/following-sibling::date[1]'),
 	    	array("label" => 'Rating', "type" => 'NUMBER', "path" => './key[.="Rating"]/following-sibling::integer[1]'),
