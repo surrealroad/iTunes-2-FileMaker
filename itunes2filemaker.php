@@ -175,7 +175,10 @@ if (file_exists($filein)) {
 			    	if(isset($dataString) && $dataString) {
 			    		// convert timestamps
 			    		if($field['type'] == "TIMESTAMP") $dataString = date_create_from_format('Y-m-d\TH:i:sT', $dataString)->format("d/m/Y H:i:s");
-			    		elseif($field['type'] == "BOOLEAN") $dataString = $track->xpath($field['path'])[$i]->getName();
+			    		elseif($field['type'] == "BOOLEAN") {
+			    			$data = $track->xpath($field['path']);
+			    			$dataString = $data[$i]->getName();
+			    		}
 			    		$xml->writeElement("DATA", $dataString);
 			    	} else {
 			    		$xml->writeElement("DATA");
